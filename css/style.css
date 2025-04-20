@@ -698,7 +698,7 @@ body.no-scroll {
     .hero__image {
         width: 330%;
         left: -70px;
-        top: -11vh;
+        top: -1vh;
     }
 
     .hero__title {
@@ -710,7 +710,15 @@ body.no-scroll {
     }
 
     .hero__title {
-        transform: translateY(24px);
+        transform: translateY(64px);
+    }
+
+    .hero__subtitle {
+        transform: translateY(40px);
+    }
+
+    .hero__btn {
+        transform: translateY(8px);
     }
 }
 
