@@ -698,7 +698,7 @@ body.no-scroll {
     .hero__image {
         width: 330%;
         left: -70px;
-        top: -15vh;
+        top: 12vh;
     }
 
     .hero__title {
