@@ -694,19 +694,23 @@ body.no-scroll {
     }
 }
 
-@media (min-width: 390px) and (max-width: 430px) {
-    .hero__title {
-        transform: translateY(20px);
+@media (min-width: 340px) and (max-width: 374px) {
+    .hero__image {
+        width: 330%;
+        left: -70px;
+        top: -11vh;
     }
 
-    .hero__image {
-        width: 350%;
-        left: -120px;
-        top: 6vh;
+    .hero__title {
+        transform: translateY(186px);
     }
 
     .hero__content {
-        transform: translateY(-70px);
+        transform: translateY(170px);
+    }
+
+    .hero__title {
+        transform: translateY(24px);
     }
 }
 
