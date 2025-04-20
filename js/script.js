@@ -8,6 +8,13 @@ burger.addEventListener('click', () => {
     body.classList.toggle('no-scroll');
 });
 
+function setFullHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+setFullHeight();
+window.addEventListener('resize', setFullHeight);
+
 
 // ANIMATION FOR SECTION HERO
 window.addEventListener('DOMContentLoaded', () => {
