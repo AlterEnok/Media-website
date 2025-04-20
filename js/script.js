@@ -58,3 +58,15 @@ cards.forEach(card => {
     observer.observe(card);
 });
 // ANIMATION FOR ANGEBOT
+
+// TOUCHED FOR MOBILES
+document.querySelectorAll('.angebot__card').forEach(card => {
+    card.addEventListener('touchstart', () => {
+        card.classList.add('is-touched');
+
+        setTimeout(() => {
+            card.classList.remove('is-touched');
+        }, 300); // длительность подсветки
+    });
+});
+// TOUCHED FOR MOBILES

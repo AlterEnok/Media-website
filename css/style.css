@@ -8,7 +8,13 @@ body {
     font-family: 'Inria Sans', sans-serif;
     color: #000;
     overflow-x: hidden;
-    background: #f5faff;
+
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 body.no-scroll {
@@ -152,7 +158,9 @@ body.no-scroll {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     height: 100dvh;
+    height: -webkit-fill-available;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -589,6 +597,9 @@ body.no-scroll {
     .hero {
         padding: clamp(20px, 5vw, 40px) clamp(10px, 5vw, 20px);
         background-color: #f8f8f8;
+        min-height: 100vh;
+        min-height: 100dvh;
+        min-height: -webkit-fill-available;
     }
 
     .hero__container {
@@ -804,6 +815,21 @@ body.no-scroll {
 
 .angebot__card:nth-child(6) {
     animation-delay: 1.1s;
+}
+
+.angebot__card:hover,
+.angebot__card.is-touched {
+    background: #0073e6;
+    color: #fff;
+}
+
+.angebot__card.is-touched .angebot__card-title,
+.angebot__card.is-touched .angebot__card-text {
+    color: #fff;
+}
+
+.angebot__card.is-touched .angebot__icon {
+    filter: brightness(0) invert(1);
 }
 
 /* ANIMATION */
