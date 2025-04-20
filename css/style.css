@@ -694,6 +694,22 @@ body.no-scroll {
     }
 }
 
+@media (min-width: 390px) and (max-width: 430px) {
+    .hero__title {
+        transform: translateY(20px);
+    }
+
+    .hero__image {
+        width: 350%;
+        left: -120px;
+        top: 6vh;
+    }
+
+    .hero__content {
+        transform: translateY(-70px);
+    }
+}
+
 /* ANGEBOT */
 .angebot {
     padding: clamp(40px, 6vw, 80px) 0;
