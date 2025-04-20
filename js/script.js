@@ -22,8 +22,21 @@ window.addEventListener('DOMContentLoaded', () => {
         content.classList.add('visible');
     }, 600); // после 0.9 секунды
 });
-
 // ANIMATION FOR SECTION HERO
+
+// ARROW
+document.addEventListener('DOMContentLoaded', () => {
+    const arrow = document.getElementById('scrollArrow');
+    const nextSection = document.getElementById('next-section');
+
+    arrow.addEventListener('click', () => {
+        nextSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// ARROW
 
 
 // ANIMATION FOR ANGEBOT

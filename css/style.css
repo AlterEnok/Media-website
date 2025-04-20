@@ -384,12 +384,17 @@ body.no-scroll {
 .hero__arrow-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .hero__arrow {
     font-size: clamp(20px, 4vw, 32px);
     animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+.hero__arrow:hover {
+    transform: translateY(5px);
 }
 
 .hero__container,
@@ -655,7 +660,7 @@ body.no-scroll {
         font-size: clamp(16px, 5vw, 20px);
         position: relative;
         top: -30px;
-        right: -23px;
+        right: -23px
     }
 }
 

@@ -64,11 +64,12 @@
 
                 <!-- Стрелка под кнопкой -->
                 <div class="hero__arrow-wrapper">
-                    <svg class="hero__arrow" width="54" height="52" viewBox="0 0 54 52" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.35242 2.05017L24.5155 50.5016" stroke="black" stroke-width="3" />
-                        <path d="M50.725 3.93347L23.5535 50.0973" stroke="black" stroke-width="3" />
-                    </svg>
+                    <div class="hero__arrow" id="scrollArrow" aria-label="Scroll to next section">
+                        <svg width="54" height="52" viewBox="0 0 54 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.35242 2.05017L24.5155 50.5016" stroke="black" stroke-width="3" />
+                            <path d="M50.725 3.93347L23.5535 50.0973" stroke="black" stroke-width="3" />
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,7 +77,7 @@
 
     <!-- ANGEBOT -->
 
-    <section class="angebot">
+    <section class="angebot" id="next-section">
         <div class="angebot__container container">
             <h2 class="angebot__title">
                 <span class="angebot__title--blue">UNSERE</span> ANGEBOTE
