@@ -640,9 +640,8 @@ body.no-scroll {
     .hero__subtitle {
         font-size: clamp(25px, 3.5vw, 18px);
         color: #000;
-        font-weight: 600;
         min-width: 215px;
-        margin-left: 29px;
+        margin-left: 20px;
     }
 
     .hero__btn {
@@ -652,8 +651,9 @@ body.no-scroll {
         font-weight: bold;
         border-radius: 38px;
         font-size: clamp(12px, 3.5vw, 16px);
-        width: clamp(157px, 30vw, 307px);
+        width: clamp(143px, 30vw, 307px);
         margin-left: 25px;
+        transform: translateY(-24px);
     }
 
     .hero__arrow {
@@ -675,6 +675,7 @@ body.no-scroll {
 
     .hero__title {
         font-size: clamp(39px, 14vw, 25px);
+        transform: translateY(34px);
     }
 
     .hero__subtitle {
