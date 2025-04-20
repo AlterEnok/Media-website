@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Expletus+Sans&family=Inria+Sans&family=Inter&family=Khand&family=Koulen&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                    <img src="img/logo.png" alt="Nudelman Webdev Logo" class="header__logo-img" />
+                </a>
+            </div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Über uns</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Rezension</a></li>
+                </ul>
+            </nav>
+            <button class="header__btn"><span>Über den Besitzer</span></button>
+
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Über uns</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Rezension</a></li>
+            </ul>
+            <button class="mobile-btn"><span>Über den Besitzer</span></button>
+        </nav>
+    </div>
+
+    <section class="hero">
+
+        <div class="container hero__container">
+
+            <div class="hero__image-wrapper">
+                <img src="img/frau.png" alt="Woman pointing" class="hero__image">
+            </div>
+
+
+            <!-- Контент -->
+            <div class="hero__content">
+                <h1 class="hero__title">Homepage nach Preis</h1>
+                <p class="hero__subtitle">Wir erstellen Webseiten nach Festpreis.</p>
+                <button class="hero__btn"><span>Schreiben Sie</span></button>
+
+                <!-- Стрелка под кнопкой -->
+                <div class="hero__arrow-wrapper">
+                    <svg class="hero__arrow" width="54" height="52" viewBox="0 0 54 52" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.35242 2.05017L24.5155 50.5016" stroke="black" stroke-width="3" />
+                        <path d="M50.725 3.93347L23.5535 50.0973" stroke="black" stroke-width="3" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANGEBOT -->
+
+    <section class="angebot">
+        <div class="angebot__container container">
+            <h2 class="angebot__title">
+                <span class="angebot__title--blue">UNSERE</span> ANGEBOTE
+            </h2>
+            <div class="angebot__cards">
+                <div class="angebot__card">
+                    <img src="img/icons/angebot1.svg" alt="Partnership" class="angebot__icon">
+                    <h3 class="angebot__card-title">Langfristige Partnerschaft</h3>
+                    <p class="angebot__card-text">Ihr Wachstum ist uns wichtig – wir begleiten Sie auch nach dem Launch.
+                    </p>
+                </div>
+
+                <div class="angebot__card">
+                    <img src="img/icons/angebot2.svg" alt="Schnell" class="angebot__icon">
+                    <h3 class="angebot__card-title">Schnell & <br>Zuverlässig</h3>
+                    <p class="angebot__card-text">Schnelle Umsetzung ohne Qualitätsverlust.</p>
+                </div>
+
+                <div class="angebot__card">
+                    <img src="img/icons/angebot3.svg" alt="Individuell" class="angebot__icon">
+                    <h3 class="angebot__card-title">Individuelle Herangehensweise</h3>
+                    <p class="angebot__card-text">Wir passen jedes Projekt an Ihre spezifischen Geschäftsziele an.</p>
+                </div>
+
+                <div class="angebot__card">
+                    <img src="img/icons/angebot4.svg" alt="Design" class="angebot__icon">
+                    <h3 class="angebot__card-title">Geschäftsorientiertes Design</h3>
+                    <p class="angebot__card-text">Unser Design hilft Ihnen, Besucher in Kunden zu verwandeln.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
