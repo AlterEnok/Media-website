@@ -4,6 +4,39 @@
     box-sizing: border-box;
 }
 
+/* SCROLLBAR */
+/* Кастомный scrollbar под светлую тему сайта */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f6fb;
+    /* светлый фон трека, как фон сайта */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0056d6;
+    /* синий акцент под надпись "HOMEPAGE NACH PREIS" */
+    border-radius: 6px;
+    border: 2px solid #f2f6fb;
+    /* чтобы выглядел "вплавленным" */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #003eaa;
+    /* немного темнее при наведении */
+}
+
+/* Firefox поддержка */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0056d6 #f2f6fb;
+}
+
+/* SCROLLBAR */
+
 body {
     font-family: 'Inria Sans', sans-serif;
     color: #000;
@@ -1170,7 +1203,7 @@ body.no-scroll {
 
     .testimonials::before,
     .testimonials::after {
-        top: 435%;
+        top: 420%;
     }
 }
 
