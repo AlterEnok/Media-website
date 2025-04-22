@@ -8,16 +8,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Expletus+Sans&family=Inria+Sans&family=Inter&family=Khand&family=Koulen&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <header class="header">
+    <div id="preloader">
+        <img src="img/logo.png" alt="">
+    </div>
+
+    <header class="header" id="top">
         <div class="container header__container">
             <div class="header__logo">
                 <a href="#" class="header__logo-link">
-                    <img src="img/logo.png" alt="Nudelman Webdev Logo" class="header__logo-img" />
+                    <img src="img/logo.png" alt="Media Website Logo" class="header__logo-img" />
                 </a>
             </div>
             <div class="burger" id="burger">
@@ -27,9 +33,9 @@
             </div>
             <nav class="nav header__nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Über uns</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Rezension</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#darum" class="nav__link">Über uns</a></li>
+                    <li class="nav__item"><a href="#rezension" class="nav__link">Rezension</a></li>
                 </ul>
             </nav>
             <button class="header__btn"><span>Über den Besitzer</span></button>
@@ -39,15 +45,15 @@
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Über uns</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Rezension</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#darum" class="nav__link">Über uns</a></li>
+                <li class="nav__item"><a href="#rezension" class="nav__link">Rezension</a></li>
             </ul>
             <button class="mobile-btn"><span>Über den Besitzer</span></button>
         </nav>
     </div>
 
-    <section class="hero">
+    <section class="hero" id="home">
 
         <div class="container hero__container">
 
@@ -111,6 +117,176 @@
         </div>
     </section>
 
+    <!-- DARUM -->
+
+    <section class="darum" id="darum">
+        <div class="darum__container">
+            <h2 class="darum__title" data-animate>
+                <span class="darum__dots">
+                    <span class="dot dot--small"></span>
+                    <span class="dot dot--medium"></span>
+                    <span class="dot dot--large"></span>
+                </span>
+                <span>Darum wir</span>
+                <span class="darum__dots">
+                    <span class="dot dot--large"></span>
+                    <span class="dot dot--medium"></span>
+                    <span class="dot dot--small"></span>
+                </span>
+            </h2>
+
+            <p class="darum__description" data-animate>Sie brauchen eine professionelle Webseite? Wir bieten Qualität zu
+                fairen Preisen. Durch unsere Spezialisierung auf Online-Marketing sind alle Projekte direkt für SEO und
+                Verkauf optimiert.</p>
+
+            <div class="darum__row darum__row--reverse">
+                <div class="darum__image" data-animate="fade-left">
+                    <img src="img/darum1.png" alt="Frontend Icon" />
+                </div>
+                <div class="darum__text" data-animate="fade-right">
+                    <img src="img/icons/front.svg" alt="Icon" class="darum__icon" />
+                    <h3 class="darum__subtitle">Frontend</h3>
+                    <p class="darum__paragraph">Wir entwickeln responsive, leistungsstarke Benutzeroberflächen mit HTML,
+                        CSS, JavaScript und React. Unser Ansatz garantiert schnelle Ladezeiten, flüssige Animationen und
+                        Kompatibilität auf allen Geräten und Browsern. Auf Wunsch liefern wir Websites auch mit
+                        WordPress.
+                    </p>
+                </div>
+            </div>
+
+            <div class="darum__row">
+                <div class="darum__text" data-animate="fade-left">
+                    <img src="img/icons/back.svg" alt="Icon" class="darum__icon" />
+                    <h3 class="darum__subtitle">Backend</h3>
+                    <p class="darum__paragraph">Wir entwickeln sichere und skalierbare Backends mit Node.js, PHP,
+                        Laravel
+                        und MySQL. Ob Benutzeranmeldung, Datenbanken oder individuelle APIs – wir sorgen für einen
+                        zuverlässigen Betrieb. Auch Integrationen mit CMS oder maßgeschneiderten Admin-Panels sind
+                        möglich.
+                    </p>
+                </div>
+                <div class="darum__image" data-animate="fade-right">
+                    <img src="img/darum2.png" alt="Backend Icon" />
+                </div>
+            </div>
+
+            <div class="darum__row darum__row--reverse">
+                <div class="darum__image" data-animate="fade-left">
+                    <img src="img/darum3.png" alt="UI/UX Icon" />
+                </div>
+                <div class="darum__text" data-animate="fade-right">
+                    <img src="img/icons/ui.svg" alt="Icon" class="darum__icon" />
+                    <h3 class="darum__subtitle">UI/UX</h3>
+                    <p class="darum__paragraph">Wir gestalten moderne und benutzerfreundliche Interfaces in Figma und
+                        Adobe
+                        XD. Dabei achten wir besonders auf Nutzerführung, Barrierefreiheit und visuelle Konsistenz. Ob
+                        Landingpage oder komplette Produkt-Oberfläche – wir schaffen Erlebnisse, die überzeugen.</p>
+                </div>
+            </div>
+
+            <div class="darum__row">
+                <div class="darum__text" data-animate="fade-left">
+                    <img src="img/icons/word.svg" alt="Icon" class="darum__icon" />
+                    <h3 class="darum__subtitle">WordPress</h3>
+                    <p class="darum__paragraph">Wir entwickeln responsive Websites mit WordPress – dem weltweit
+                        beliebtesten
+                        CMS. Unsere Projekte sind SEO-optimiert, benutzerfreundlich und leicht zu verwalten. Ob
+                        Unternehmensseite, Blog oder kleiner Onlineshop – wir liefern moderne und zuverlässige Lösungen.
+                    </p>
+                </div>
+                <div class="darum__image" data-animate="fade-right">
+                    <img src="img/darum4.png" alt="WordPress Icon" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+
+    <!-- Отзывы -->
+    <section class="testimonials" id="rezension">
+        <div class="testimonials__container">
+            <h2 class="testimonials__title">
+                WAS UNSERE <br><span class="testimonials__highlight">ZUFRIEDENEN</span> KUNDEN SAGEN
+            </h2>
+
+            <!-- Swiper -->
+            <div class="swiper testimonials__slider">
+                <div class="swiper-wrapper">
+                    <!-- Слайд 1 -->
+                    <div class="swiper-slide testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__header">
+                                <img src="img/testimonial1.png" alt="Sebastian Vogel" class="testimonials__photo" />
+                                <h3 class="testimonials__name">Sebastian Vogel</h3>
+                            </div>
+                            <p class="testimonials__text">
+                                Das Projekt wurde termingerecht abgeschlossen, und jedes Detail wurde berücksichtigt.
+                                Es ist eine Freude, mit Menschen zusammenzuarbeiten, die wirklich etwas von ihrem Fach
+                                verstehen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Слайд 2 -->
+                    <div class="swiper-slide testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__header">
+                                <img src="img/testimonial2.png" alt="Anna Müller" class="testimonials__photo" />
+                                <h3 class="testimonials__name">Katharina Hofmann</h3>
+                            </div>
+                            <p class="testimonials__text">
+                                Wir sind sehr zufrieden mit der Zusammenarbeit – die Website ist modern und
+                                benutzerfreundlich geworden. Das Team war stets erreichbar und hilfsbereit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__nav">
+                    <div class="swiper-button-prev testimonials__arrow">&lt;</div>
+                    <div class="swiper-button-next testimonials__arrow">&gt;</div>
+                </div>
+                <div class="swiper-pagination testimonials__dots"></div>
+
+            </div>
+
+            <!-- Навигация вне swiper -->
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="#" class="header__logo-link">
+                        <img src="img/logo.png" alt="Nudelman Webdev Logo" class="header__logo-img" />
+                    </a>
+                </div>
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link">Über uns</a>
+                    <a href="#" class="footer__link">Rezension</a>
+                </nav>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+
+            </div>
+
+            <hr class="footer__divider" />
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Mediawebsite 2025. All rights reserved. Designed by NovaTeam.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="scroll-up" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
