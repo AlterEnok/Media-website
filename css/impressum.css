@@ -1,0 +1,28 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.impressum {
+    background: #f5faff
+}
+
+.impressum__title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.impressum__content {
+    margin-top: 30px;
+}

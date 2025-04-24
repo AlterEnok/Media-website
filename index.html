@@ -25,6 +25,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
 
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -53,7 +55,17 @@
                     <li class="nav__item"><a href="#rezension" class="nav__link">Rezension</a></li>
                 </ul>
             </nav>
-            <button class="header__btn"><span>Über den Besitzer</span></button>
+            <div class="header__call">
+                <a href="tel:+4915123456789" class="nav__call" title="Anrufen">
+                    <svg class="hero__call-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.51 19.51 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.44 12.44 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.44 12.44 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+
+                </a>
+            </div>
+
 
         </div>
     </header>
@@ -64,7 +76,16 @@
                 <li class="nav__item"><a href="#darum" class="nav__link">Über uns</a></li>
                 <li class="nav__item"><a href="#rezension" class="nav__link">Rezension</a></li>
             </ul>
-            <button class="mobile-btn"><span>Über den Besitzer</span></button>
+            <a href="tel:+49 179 5213887" class="mobile__call-btn" title="Anrufen">
+                <svg class="hero__call-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none"
+                    stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.51 19.51 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72 12.44 12.44 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.44 12.44 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+
+                <span>Anrufen</span>
+            </a>
+
         </nav>
     </div>
 
@@ -81,7 +102,7 @@
             <div class="hero__content">
                 <h1 class="hero__title">Homepage nach Preis</h1>
                 <p class="hero__subtitle">Wir erstellen Webseiten nach Festpreis.</p>
-                <button class="hero__btn"><span>Schreiben Sie</span></button>
+                <button class="hero__btn" id="openPopup"><span>Schreiben Sie</span></button>
 
                 <!-- Стрелка под кнопкой -->
                 <div class="hero__arrow-wrapper">
@@ -94,6 +115,32 @@
                 </div>
             </div>
         </div>
+        <!-- POPUP -->
+        <div class="popup" id="popupForm">
+            <div class="popup__overlay"></div>
+            <div class="popup__content">
+                <button class="popup__close" id="closePopup">&times;</button>
+                <h2 class="popup__title">Individuelle unverbindliche Beratung buchen</h2>
+
+                <form id="appointmentForm" class="popup__form" lang="de">
+                    <div class="popup__row">
+                        <input type="text" name="vorname" placeholder="Vorname" required />
+                        <input type="text" name="nachname" placeholder="Nachname" required />
+                    </div>
+
+                    <input type="email" name="email" placeholder="E-Mail-Adresse" required />
+
+                    <label class="popup__label">Termin wählen</label>
+
+
+                    <input type="text" name="date" placeholder="TT.MM.JJJJ" required />
+
+
+                    <button type="submit" class="popup__submit">Senden</button>
+                </form>
+            </div>
+        </div>
+
     </section>
 
     <!-- ANGEBOT -->
@@ -265,8 +312,6 @@
 
             </div>
 
-            <!-- Навигация вне swiper -->
-
         </div>
     </section>
 
@@ -282,6 +327,7 @@
                     <a href="#home" class="footer__link">Home</a>
                     <a href="#darum" class="footer__link">Über uns</a>
                     <a href="#rezension" class="footer__link">Rezension</a>
+                    <a href="impressum.html" class="footer__link footer__impressum">Impressum</a>
                 </nav>
                 <div class="footer__socials">
                     <a href="#" class="footer__social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -294,6 +340,7 @@
 
             <div class="footer__bottom">
                 <p class="footer__copyright">© Mediawebsite 2025. All rights reserved. Designed by NovaTeam.</p>
+
             </div>
         </div>
     </footer>
@@ -301,6 +348,9 @@
     <a href="#top" class="scroll-up" aria-label="Scroll to top">
         <i class="fas fa-chevron-up"></i>
     </a>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/de.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

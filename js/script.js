@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     const preloader = document.getElementById('preloader');
     setTimeout(() => {
         preloader.classList.add('hidden');
-    }, 1000); // Дай чуть времени логотипу показаться
+    }, 1000);
 });
 
 // PRELOADER
@@ -69,6 +69,59 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ARROW
+
+// POPUP
+document.addEventListener('DOMContentLoaded', function () {
+    // Подключю Flatpickr
+    flatpickr("input[name='date']", {
+        dateFormat: "d.m.Y",
+        altInput: true,
+        altFormat: "d.m.Y",
+        locale: "de",
+        minDate: "today",
+        allowInput: true,
+        defaultDate: null,
+        ariaDateFormat: "d.m.Y"
+    });
+
+    const popup = document.getElementById('popupForm');
+    const html = document.documentElement;
+    const body = document.body;
+
+    // Открытие попапа
+    document.getElementById('openPopup').addEventListener('click', () => {
+        popup.classList.add('active');
+        html.style.overflow = 'hidden';
+        body.style.overflow = 'hidden';
+    });
+
+    // Функция закрытия попапа
+    const closePopup = () => {
+        popup.classList.remove('active');
+        html.style.overflow = '';
+        body.style.overflow = '';
+    };
+
+    // Закрытие по кнопке
+    document.getElementById('closePopup').addEventListener('click', closePopup);
+
+    // Закрытие по клику на тёмный фон
+    document.querySelector('.popup__overlay').addEventListener('click', closePopup);
+
+    // Закрытие после отправки формы
+    document.getElementById('appointmentForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Die Anfrage wurde gesendet!');
+        closePopup();
+    });
+});
+
+
+
+
+
+
+// POPUP
 
 
 // ANIMATION FOR ANGEBOT
